@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-color: #A6F4DC;
+    margin: 200px 40%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    text-decoration: underline;
+    color: white;
+}
+
+form {
+    background-color: #826AED;
+    width: 300px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.8;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    all:unset;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.3rem;
+}
+
+.fa-search {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
