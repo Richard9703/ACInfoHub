@@ -2,18 +2,15 @@
 var request = new XMLHttpRequest ()
 
 // Open connection to API (ACNHApi) using GET erquest on URL endpoint.
-request.open('GET', 'https://acnhapi.com/v1/fish/', true)
-
+request.open('GET', 'https://acnhapi.com/v1a/fish/', true)
 request.onload = function () {
     // Access JSON data here
    var data = JSON.parse(this.response)
 
    if (request.status >= 200 && request.status < 400) {
-    data.array.forEach(element => {
-        
-    });(fish => {
+    data.forEach(fish => {
         // Log each fish
-        console.log(fish.title)
+        console.log(fish.name)   
     })
    }  else {
        console.log('error')
