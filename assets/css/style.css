@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-    background-color: #A6F4DC;
+    background-color: #FBC488;
     margin: 200px 40%;
 }
 
@@ -11,12 +11,11 @@ h1 {
     letter-spacing: .2rem;
     text-align: center;
     font-family: "Indie Flower", cursive;
-    text-decoration: underline;
-    color: white;
+    color: #ffffff;
 }
 
 form {
-    background-color: #826AED;
+    background-color: #85BFC1;
     width: 300px;
     height: 44px;
     border-radius: 10px;
@@ -31,14 +30,14 @@ form {
 input {
     all: unset;
     font: 16px system-ui;
-    color: #fff;
+    color: #2B2118;
     height: 100%;
     width: 100%;
     padding: 6px 10px;
 }
 
 ::placeholder {
-    color: #fff;
+    color: #ffffff;
     opacity: 0.8;
     font-family: "Poppins", sans-serif;
 }
@@ -51,7 +50,7 @@ button {
 }
 
 .fa-search {
-    color: #fff;
+    color: #ffffff;
     fill: currentColor;
     width: 24px;
     height: 24px;
