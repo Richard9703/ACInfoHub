@@ -24,16 +24,19 @@ request.onload = function () {
        card.setAttribute('class', 'card');
 
        const h1 = document.createElement('h1');
-       h1.textContent = fish.name;
+       h1.textContent = fish.name["name-EUen"];
 
-    //    const p = document.createElement('p');
-    //    movie.description = movie.description.substring(0, 300);
-    //    p.textContent  = `${movie.description}...`;
+       const p = document.createElement('p');
+       fish['museum-phrase'] =  fish['museum-phrase'].substring(0, 300);
+       p.textContent  = `${ fish['museum-phrase']}...`;
 
-       container.appendChild(card);
+        container.appendChild(card);
 
-       card.appendChild(h1);
-    //    card.appendChild(p);
+        card.appendChild(h1);
+        card.appendChild(p);
+        
+        
+    
     });
    }  else {
        const errorMessage = document.createElement('marquee');
