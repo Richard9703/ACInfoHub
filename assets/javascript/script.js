@@ -20,22 +20,26 @@ request.onload = function () {
 
    if (request.status >= 200 && request.status < 400) {
     data.forEach(fish => {
+       
+
+       // Card  
        const card = document.createElement('div');
        card.setAttribute('class', 'card');
 
+       // Fish name
        const h1 = document.createElement('h1');
        h1.textContent = fish.name["name-EUen"];
-
+       
+       // Information
        const p = document.createElement('p');
-       fish['museum-phrase'] =  fish['museum-phrase'].substring(0, 300);
-       p.textContent  = `${ fish['museum-phrase']}...`;
+       fish['catch-phrase'] =  fish['catch-phrase'].substring(0, 300);
+       p.textContent  = `${ fish['catch-phrase']}...`;
+
 
         container.appendChild(card);
 
         card.appendChild(h1);
         card.appendChild(p);
-        
-        
     
     });
    }  else {
