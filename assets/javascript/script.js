@@ -1,3 +1,13 @@
+var results = [];
+var searchField = "fish";
+var searchVal = "fish name"
+for (var i=0 ; i < fish.name.length ; i++)
+{
+    if (fish.name[searchField] == searchVal) {
+        results.push(fish.name);
+    }
+}
+
 // const app = document.getElementById('root');
 
 // const logo = document.createElement('img');
@@ -51,9 +61,4 @@
 
 // // Send request
 // request.send();
-
-function searchFunction() {
-    var input, filter,
-}
-
 
