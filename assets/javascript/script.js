@@ -1,6 +1,4 @@
-var searchField = "Search Name";
-var searchVal = "";
-
+const infoInput = document.querySelector('.info-input');
 
 const app = document.getElementById('root');
 
@@ -23,29 +21,33 @@ request.onload = function () {
    var data = JSON.parse(this.response);
 
    if (request.status >= 200 && request.status < 400) {
-    data.forEach(fish => {
+        console.log("test");
+        console.log(infoInput.value);
+
+        data.forEach(fish => {
        
-    if (searchVal == fish.name["name-EUen"]) {
-         // Card  
-       const card = document.createElement('div');
-       card.setAttribute('class', 'card');
+        if (infoInput.value == fish.name["name-EUen"]) {
+            // Card  
+            const card = document.createElement('div');
+            card.setAttribute('class', 'card');
 
-       // Fish name
-       const h1 = document.createElement('h1');
-       h1.textContent = fish.name["name-EUen"];
-       
-       // Information
-       const p = document.createElement('p');
-       fish['catch-phrase'] =  fish['catch-phrase'].substring(0, 300);
-       p.textContent  = `${ fish['catch-phrase']}...`;
+            // Fish name
+            const h1 = document.createElement('h1');
+            h1.textContent = fish.name["name-EUen"];
+            
+            // Information
+            const p = document.createElement('p');
+            fish['catch-phrase'] =  fish['catch-phrase'].substring(0, 300);
+            p.textContent  = `${ fish['catch-phrase']}...`;
 
 
-        container.appendChild(card);
+            container.appendChild(card);
 
-        card.appendChild(h1);
-        card.appendChild(p);
-    }
-});
+            card.appendChild(h1);
+            card.appendChild(p);
+            infoInput.value = "";
+        }
+    });
     } else {
        const errorMessage = document.createElement('marquee');
        errorMessage.textContent = `Error!`;
