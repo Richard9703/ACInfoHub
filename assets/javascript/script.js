@@ -21,9 +21,7 @@ request.onload = function () {
    var data = JSON.parse(this.response);
 
    if (request.status >= 200 && request.status < 400) {
-        console.log("test");
-        console.log(infoInput.value);
-
+        
         data.forEach(fish => {
        
         if (infoInput.value == fish.name["name-EUen"]) {
@@ -45,7 +43,7 @@ request.onload = function () {
 
             card.appendChild(h1);
             card.appendChild(p);
-            infoInput.value = "";
+            
         }
     });
     } else {
