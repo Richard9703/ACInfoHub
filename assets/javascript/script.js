@@ -27,7 +27,7 @@ request.onload = function () {
         if (infoInput.value == fish.name["name-EUen"]) {
             // Card  
             const card = document.createElement('div');
-            card.setAttribute('class', 'card');
+            card.setAttribute('class', 'box');
 
             // Fish name
             const h1 = document.createElement('h1');
@@ -43,7 +43,7 @@ request.onload = function () {
 
             card.appendChild(h1);
             card.appendChild(p);
-            
+            infoInput.value = "";
         }
     });
     } else {

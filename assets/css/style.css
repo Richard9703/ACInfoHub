@@ -10,7 +10,20 @@
     color: #666;
     background: #B1B695;
   }
-  
+
+  .title {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 0 0 2rem 0;
+    background: #FCD0A1;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .info-input {
+    justify-content: center;
+  }
+
   #root {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,7 +55,7 @@
     flex-wrap: wrap;
   }
   
-  .card {
+  .box {
     margin: 1rem;
     background: white;
     border-radius: 12px;
@@ -50,30 +63,30 @@
     transition: all .2s linear;
   }
   
-  .card:hover {
+  .box:hover {
     transform: translate3D(0, -2px, 0);
   }
   
   @media screen and (min-width: 600px) {
-    .card {
+    .box {
       flex: 1 1 calc(50% - 2rem);
     }
   }
   
   @media screen and (min-width: 900px) {
-    .card {
+    .box {
       flex: 1 1 calc(33% - 2rem);
     }
   }
   
-  .card:nth-child(2n) h1 {
+  .box:nth-child(2n) h1 {
     background: #AFD2E9;
   }
   
-  .card:nth-child(4n) h1 {
+  .box:nth-child(4n) h1 {
     background: #A690A4;;
   }
   
-  .card:nth-child(5n) h1 {
+  .box:nth-child(5n) h1 {
     background: #5E4B56;;
   }
